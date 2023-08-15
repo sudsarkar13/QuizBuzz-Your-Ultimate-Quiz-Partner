@@ -1,3 +1,5 @@
+// Logreg scroll
+
 const logregBox = document.querySelector('.logreg-box');
 const loginLink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');
@@ -9,3 +11,11 @@ registerLink.addEventListener('click', () => {
 loginLink.addEventListener('click', () => {
     logregBox.classList.remove('active');
 });
+
+// Login validation
+
+
+// footer year
+VarDate = new Date();
+VarYear = VarDate.getFullYear();
+document.getElementById("footer").innerHTML = VarYear;
