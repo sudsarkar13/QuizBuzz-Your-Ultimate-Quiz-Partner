@@ -1,0 +1,1 @@
+mongodb+srv://sudsarkar13:6n5Xn50kLE77omIH@cluster0.xoa4oj7.mongodb.net/admin
