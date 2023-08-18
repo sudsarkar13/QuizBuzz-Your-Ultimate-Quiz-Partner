@@ -13,6 +13,7 @@ loginLink.addEventListener('click', () => {
 });
 
 // Login & Signup validation
+document.getElementById("SignIn")
 
 // Import the jQuery library
 const $ = require('jquery');
@@ -69,3 +70,8 @@ function validateEmail(email) {
 VarDate = new Date();
 VarYear = VarDate.getFullYear();
 document.getElementById("footer").innerHTML = VarYear;
+
+// // fyear
+// var Date = new Date();
+// var Year = Date.getFullYear();
+// document.getElementById("footer").innerHTML = Year;
