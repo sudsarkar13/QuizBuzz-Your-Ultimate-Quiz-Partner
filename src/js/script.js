@@ -88,32 +88,14 @@ VarYear = VarDate.getFullYear();
 document.getElementById("footer").innerHTML = VarYear;
 
 // footer time
-// function showTime() {
-//     const now = new Date();
-//     const days = now.getDay();
-//     const hours = now.getHours();
-//     const minutes = now.getMinutes();
-//     const seconds = now.getSeconds();
-
-//     const timeString = `${days}days ${hours}hours ${minutes}mins ${seconds}secs`;
-
-//     document.getElementById("f-time").innerHTML = timeString;
-// }
-
-// setInterval(showTime, 1000);
-
 function showTime() {
     const now = new Date();
-    const startDate = new Date("2021-08-01");
-    const days = now.getDay();
+    const startDate = new Date("2023-08-01");
     const hours = now.getHours();
     const minutes = now.getMinutes();
     const seconds = now.getSeconds();
-
-    const timeString = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
+    const daysSinceProjectStart = now.getDate() - startDate.getDate();
+    const timeString = `${daysSinceProjectStart} days ${hours}hours ${minutes}mins ${seconds}secs`;
     document.getElementById("f-time").innerHTML = timeString;
 }
-
 setInterval(showTime, 1000);
-
