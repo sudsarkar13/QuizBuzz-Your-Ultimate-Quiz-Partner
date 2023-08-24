@@ -52,16 +52,16 @@ formSignUp.addEventListener('submit', (event) => {
 
     console.log(inputName, inputPhone, inputPassword, inputConfirmPassword);
 
-    if(inputName.length < 6)
+    if (inputName.length < 6)
         console.log("Name is too short")
 
-    if(!validateEmail(inputEmail))
+    if (!validateEmail(inputEmail))
         console.log("Invalid Email");
 
-    if(!validatePhone(inputPhone))
+    if (!validatePhone(inputPhone))
         console.log("Invalid Phone");
 
-    if(inputConfirmPassword != inputPassword){
+    if (inputConfirmPassword != inputPassword) {
         console.log("password does'nt match");
     }
 })
@@ -70,14 +70,14 @@ formSignUp.addEventListener('submit', (event) => {
 const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 function validateEmail(email) {
-  return emailRegex.test(email);
+    return emailRegex.test(email);
 }
 
 
 const phoneRegex = /^[6-9]\d{9}$/;
 
 function validatePhone(phone) {
-  return phoneRegex.test(phone);
+    return phoneRegex.test(phone);
 }
 
 
@@ -86,3 +86,34 @@ function validatePhone(phone) {
 VarDate = new Date();
 VarYear = VarDate.getFullYear();
 document.getElementById("footer").innerHTML = VarYear;
+
+// footer time
+// function showTime() {
+//     const now = new Date();
+//     const days = now.getDay();
+//     const hours = now.getHours();
+//     const minutes = now.getMinutes();
+//     const seconds = now.getSeconds();
+
+//     const timeString = `${days}days ${hours}hours ${minutes}mins ${seconds}secs`;
+
+//     document.getElementById("f-time").innerHTML = timeString;
+// }
+
+// setInterval(showTime, 1000);
+
+function showTime() {
+    const now = new Date();
+    const startDate = new Date("2021-08-01");
+    const days = now.getDay();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+
+    const timeString = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+    document.getElementById("f-time").innerHTML = timeString;
+}
+
+setInterval(showTime, 1000);
+
