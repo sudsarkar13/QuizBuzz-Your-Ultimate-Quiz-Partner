@@ -3,6 +3,8 @@ QuizBuzz Your Ultimate Quizzeria Partner with unlimited general knowledge multip
 
 [![Deploy static content to Pages](https://github.com/sudsarkar13/QuizBuzz-Your-Ultimate-Quiz-Partner/actions/workflows/static.yml/badge.svg)](https://github.com/sudsarkar13/QuizBuzz-Your-Ultimate-Quiz-Partner/actions/workflows/static.yml)
 
+[![Deploy static content to Pages](https://github.com/sudsarkar13/QuizBuzz-Your-Ultimate-Quiz-Partner/actions/workflows/static.yml/badge.svg)](https://github.com/sudsarkar13/QuizBuzz-Your-Ultimate-Quiz-Partner/actions/workflows/static.yml)
+
 ## npm Guide
 
 sudeepta@IdePd-Flx-5:~/Sudeepta/Company/PROU/IP-1$ npm --help
