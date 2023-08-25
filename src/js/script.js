@@ -95,7 +95,7 @@ function showTime() {
     const minutes = now.getMinutes();
     const seconds = now.getSeconds();
     const daysSinceProjectStart = now.getDate() - startDate.getDate();
-    const timeString = `${daysSinceProjectStart} days ${hours}hours ${minutes}mins ${seconds}secs`;
+    const timeString = `${daysSinceProjectStart} days ${hours}hrs : ${minutes}mins : ${seconds}secs`;
     document.getElementById("f-time").innerHTML = timeString;
 }
 setInterval(showTime, 1000);
