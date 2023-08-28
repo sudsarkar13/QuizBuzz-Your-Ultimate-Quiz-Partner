@@ -45,7 +45,7 @@
         <div class="logreg-box">
             <!-- Sign In Form -->
             <div class="form-box login">
-                <form action="/myaction.php" method="post" class="SignIn" id="SignIn">
+                <form action="/" method="post" class="SignIn" id="SignIn">
                     <h2>Sign In</h2>
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-envelope'></i></span>
@@ -69,24 +69,26 @@
 
             <!-- Sign Up Form -->
             <div class="form-box register" id="SignUp">
-                <form method="post" id="sign-up">
+                <form method="post" action="/" id="sign-up">
                     <h2>Sign Up</h2>
                     <div class="input-box">
+                        <label>Full Name</label>
                         <span class="icon"><i class='bx bxs-user'></i></span>
                         <!-- I am changing the type from name to text. -->
                         <input type="text" id="name" required>
-                        <label>Full Name</label><span class="validation"></span>
+                        <span class="validation"></span>
                     </div>
                     <div class="input-box">
+                        <label>Email</label>
                         <span class="icon"><i class='bx bxs-envelope'></i></span>
                         <input type="email" name="email" id="email" required>
-                        <label>Email</label><span class="validation" id="vc-email">Enter a valid Email ID</span>
+                        <span class="validation" id="vc-email">Enter a valid Email ID</span>
                     </div>
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-contact'></i></span>
                         <!-- I am changing the name from Phone Number to phone -->
-                        <input type="Phone Number" name="phone" id="phone" required>
                         <label>Phone Number</label>
+                        <input type="Phone Number" name="phone" id="phone" required>
                     </div>
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-lock-alt'></i></span>
