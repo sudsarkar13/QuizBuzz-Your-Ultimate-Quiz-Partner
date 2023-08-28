@@ -25,12 +25,11 @@ const userSchema = new mongoose.Schema({
 
 module.exports = mongoose.model('User', userSchema);
 
-// app.get('/', function (req, res) {
-//     const indexPath = path.join(__dirname, '/index.html');
-// });
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
 
-// Set up static file serving for CSS, JS, and images
-app.use(express.static(path.join(__dirname, '/index.html')));
+
 
 //post
 app.post('/register', async (req, res) => {
